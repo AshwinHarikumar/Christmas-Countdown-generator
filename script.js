@@ -23,7 +23,23 @@ document.addEventListener('DOMContentLoaded', () => {
             "Happy Holidays!",
             "Season's Greetings!",
             "Joy to the World!",
-            "Ho Ho Ho! Merry Christmas!"
+            "Ho Ho Ho! Merry Christmas!",
+            "Wishing you a Merry Christmas and a Happy New Year!",
+            "Warm holiday wishes to you and your loved ones!",
+            "May your season be merry and bright!",
+            "Spreading holiday cheer to everyone near!",
+            "Have yourself a holly jolly Christmas!",
+            "Peace, love, and joy this holiday season!",
+            "Tidings of comfort and joy!",
+            "Wishing you a season filled with magic and wonder!",
+            "May the spirit of the season fill your heart with happiness!",
+            "Cheers to love, laughter, and festive fun!",
+            "May your holidays sparkle with joy and laughter!",
+            "Sending love and warm wishes for a magical Christmas!",
+            "Let the spirit of Christmas fill your home with peace and joy!",
+            "Wishing you a holiday season as wonderful as you are!",
+            "Celebrate the season with love, laughter, and good cheer!"
+
         ];
         return greetings[Math.floor(Math.random() * greetings.length)];
     }
@@ -42,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayMessage() {
         const message = localStorage.getItem('christmasMessage');
         if (message) {
-            savedMessage.innerHTML = `Your Message: ${message}`;
+            savedMessage.innerHTML = ` ${message}`;
         }
     }
 
